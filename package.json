@@ -9,6 +9,10 @@
     "build": "webpack --mode=development",
     "start": "npm run start && webpack-dev-server --open --mode=development"
   },
+  "jest": {
+    "collectCoverage": true,
+    "coverageReporters": ["html"]
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

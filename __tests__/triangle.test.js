@@ -36,3 +36,20 @@ describe('Triangle', () => {
     expect(isoscTriangle.checkType()).toEqual("isosceles triangle");
   });
 });
+
+describe('Triangle', () => {
+
+
+  test('should correctly determine whether three lengths make an equilateral triangle', () => {
+    const equiTriangle = new Triangle(5,5,5)
+    expect(equiTriangle.checkType()).toEqual("equilateral triangle");
+  });
+});
+
+describe('Triangle', () => {
+ 
+  test('should say if a triangle is big', () => {
+    const triangle = new Triangle(3,4,5);
+    expect(triangle.isBigTriangle()).toEqual('big');
+  });
+});
